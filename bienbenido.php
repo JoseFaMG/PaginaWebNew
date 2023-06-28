@@ -7,7 +7,7 @@
     echo '<script>
     alert("Por favor debe iniciar seción antes de continuar navegando");
     </script>';
-    header("location: index.php");
+    header("location: bienbenido.php");
     session_destroy();
     die();
     
