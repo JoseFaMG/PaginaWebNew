@@ -9,7 +9,7 @@ nav{
     font-weight: bold; 
  }
  h1{
-     color: white;
+     color: rgb(0, 0, 0);
      font-size: 45px;
  }
  ul li{
@@ -17,7 +17,7 @@ nav{
      padding: 0px 20px;
  }
  a{
-     color: white;
+     color: rgb(0, 0, 0);
      text-decoration: none;
  }
 *{

@@ -12,11 +12,7 @@
     $ejecutar = mysql_query($conexcion, $query);
 
     if($ejecutar){
-        echo '
-        <script>
-        alert("Usuario almacenado Correctamente");
-        </script>
-        ';
+        echo '<script>alert("Usuario almacenado Correctamente");</script>';
     }
 
 ?>
