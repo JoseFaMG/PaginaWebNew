@@ -44,10 +44,6 @@
             <!-------------------->
             <!---navbar-->
             <!------------------->
-            <a class="text-body mr-3" href="">Sobre nosotros</a>
-            <a class="text-body mr-3" href="">Contacto</a>
-            <a class="text-body mr-3" href="">Sucursales</a>
-            <a class="text-body mr-3" href="">Ayuda</a>
             <?php
             include 'conexionbd.php';
             $nombre_completo=$_POST['nombre_completo'];
@@ -57,6 +53,11 @@ if(isset($_SESSION['nombre_completo'])) {
     echo "<h2>Bienvenido, $nombre_completo</h2>";
 }
 ?>
+            <a class="text-body mr-3" href="">Sobre nosotros</a>
+            <a class="text-body mr-3" href="">Contacto</a>
+            <a class="text-body mr-3" href="">Sucursales</a>
+            <a class="text-body mr-3" href="">Ayuda</a>
+   
           </div>
         </div>
         <div class="col-lg-6 text-center text-lg-right">
