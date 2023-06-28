@@ -9,6 +9,8 @@
       session_destroy();
       die();
     }    
+    
+
 ?>
 
 <!DOCTYPE html>
@@ -60,7 +62,9 @@
             <a class="text-body mr-3" href="">Contacto</a>
             <a class="text-body mr-3" href="">Sucursales</a>
             <a class="text-body mr-3" href="">Ayuda</a>
-   
+            <a class="text-body mr-3">Bienbenido, <?php echo $_SESSION['usuario']; ?></a>
+            <a class="text-body mr-3" href = "php/cerrar.php">Finalizar Sesion</a>
+
           </div>
         </div>
         <div class="col-lg-6 text-center text-lg-right">
@@ -191,7 +195,6 @@
               id="navbarCollapse"
             >
               <div class="navbar-nav mr-auto py-0">
-                <a href="../PaginaWebNew/index.html" class="nav-item nav-link active">Home</a>
                 
                 <div class="nav-item dropdown"></div>
                 <a href="pagina-main/pagina-main.html" class="nav-item nav-link">Contactanos</a>

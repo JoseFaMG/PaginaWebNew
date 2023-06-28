@@ -21,6 +21,18 @@
 
     $verficar_usuario = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario='$usuario'");
 
+    // ...
+
+if ($ejecutar) {
+    // Almacenar el nombre de usuario en una variable de sesión
+    $_SESSION['usuario'] = $usuario;
+    echo '<script>
+            alert("Usuario almacenado Exitosamente");
+            window.location = "../login.php";
+          </script>';
+} 
+
+
     if(mysqli_num_rows($verficar_usuario)>0){
         echo '<script>
         alert("Este usuario ya esta registrado, intenta con otro diferente");
