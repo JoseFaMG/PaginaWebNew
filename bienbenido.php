@@ -48,6 +48,15 @@
             <a class="text-body mr-3" href="">Contacto</a>
             <a class="text-body mr-3" href="">Sucursales</a>
             <a class="text-body mr-3" href="">Ayuda</a>
+            <?php
+            include 'conexionbd.php';
+            $nombre_completo=$_POST['nombre_completo'];
+ $session_start= mysqli_query($conexion,"SELECT * FROM nombre WHERE nombre_completo=$nombre_completo");
+if(isset($_SESSION['nombre_completo'])) {
+    $nombre_completo = $_SESSION['nombre_completo'];
+    echo "<h2>Bienvenido, $nombre_completo</h2>";
+}
+?>
           </div>
         </div>
         <div class="col-lg-6 text-center text-lg-right">
@@ -178,11 +187,11 @@
               id="navbarCollapse"
             >
               <div class="navbar-nav mr-auto py-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="/index.html" class="nav-item nav-link active">Home</a>
                 
                 <div class="nav-item dropdown"></div>
                 <a href="pagina-main/pagina-main.html" class="nav-item nav-link">Contactanos</a>
-                <a href="http://localhost/PaginaWebNew/login.php" class="nav-item nav-link">Registrate</a>
+               
               </div>
               <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
                 <a href="" class="btn px-0">
