@@ -19,7 +19,7 @@
             </label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="../bienbenido.php">Inicio</a></li>
                     
                 </ul>
             </nav>

@@ -197,7 +197,7 @@
               <div class="navbar-nav mr-auto py-0">
                 
                 <div class="nav-item dropdown"></div>
-                <a href="pagina-main/pagina-main.html" class="nav-item nav-link">Contactanos</a>
+                <a href="pagina-main/contactanos.php" class="nav-item nav-link">Contactanos</a>
                
               </div>
               <div class="navbar-nav ml-auto py-0 d-none d-lg-block">

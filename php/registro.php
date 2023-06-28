@@ -25,7 +25,7 @@
 
 if ($ejecutar) {
     // Almacenar el nombre de usuario en una variable de sesión
-    $_SESSION['usuario'] = $usuario;
+    $_SESSION['nombre_completo'] = $nombre_completo;
     echo '<script>
             alert("Usuario almacenado Exitosamente");
             window.location = "../login.php";
