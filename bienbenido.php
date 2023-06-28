@@ -1,19 +1,4 @@
-<?php
 
-  session_start();
-
-  if(!isset($_SESSION['usuario'])){
-
-    echo '<script>
-    alert("Por favor debe iniciar seción antes de continuar navegando");
-    </script>';
-    header("location: bienbenido.php");
-    session_destroy();
-    die();
-    
-  }
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
