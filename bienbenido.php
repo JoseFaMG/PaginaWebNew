@@ -3,9 +3,9 @@
     session_start();
     if(!isset($_SESSION['usuario'])){
       echo '<script>
-    alert("Usuario Incorrecto, por favor verifique los datos introducidos");
+    alert("Debe iniciar seción");
+    window.location="login.php";
     </script>';
-      header("location: login.php");
       session_destroy();
       die();
     }    
