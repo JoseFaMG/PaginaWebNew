@@ -1,4 +1,15 @@
+<?php
 
+    session_start();
+    if(!isset($_SESSION['usuario'])){
+      echo '<script>
+    alert("Usuario Incorrecto, por favor verifique los datos introducidos");
+    </script>';
+      header("location: login.php");
+      session_destroy();
+      die();
+    }    
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -44,15 +55,7 @@
             <!-------------------->
             <!---navbar-->
             <!------------------->
-            <?php
-            include 'conexionbd.php';
-            $nombre_completo=$_POST['nombre_completo'];
- $session_start= mysqli_query($conexion,"SELECT * FROM nombre WHERE nombre_completo=$nombre_completo");
-if(isset($_SESSION['nombre_completo'])) {
-    $nombre_completo = $_SESSION['nombre_completo'];
-    echo "<h2>Bienvenido, $nombre_completo</h2>";
-}
-?>
+           
             <a class="text-body mr-3" href="">Sobre nosotros</a>
             <a class="text-body mr-3" href="">Contacto</a>
             <a class="text-body mr-3" href="">Sucursales</a>
@@ -188,7 +191,7 @@ if(isset($_SESSION['nombre_completo'])) {
               id="navbarCollapse"
             >
               <div class="navbar-nav mr-auto py-0">
-                <a href="/index.html" class="nav-item nav-link active">Home</a>
+                <a href="../PaginaWebNew/index.html" class="nav-item nav-link active">Home</a>
                 
                 <div class="nav-item dropdown"></div>
                 <a href="pagina-main/pagina-main.html" class="nav-item nav-link">Contactanos</a>
