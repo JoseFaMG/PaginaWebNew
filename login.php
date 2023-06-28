@@ -53,7 +53,7 @@
                         <input type="text" placeholder="Nombre completo" name="nombre_completo">
                         <input type="text" placeholder="Correo Electronico" name="correo">
                         <input type="text" placeholder="Usuario" name="usuario">
-                        <input type="password" placeholder="Contraseña" name="contracena">
+                        <input type="password" placeholder="Contraseña" name="pass">
                         <button>Regístrarse</button>
                     </form>
                 </div>
