@@ -13,7 +13,7 @@
 <body>
     <header>
         <nav>
-            <h1 href="img/logo">NUBOX</h1>
+            <h1 href="img/logo.png">NUBOX</h1>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="">Contactanos</a></li>
