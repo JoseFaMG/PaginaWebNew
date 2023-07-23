@@ -12,6 +12,7 @@
     $verficar_correo = mysqli_query($conexion, "SELECT * FROM usuarios WHERE CORREO='$correo'");
 
     if(mysqli_num_rows($verficar_correo)>0){
+        
         echo '<script>
         alert("Este Correo ya esta registrado, intenta con otro diferente");
         window.location = "../login.php";
